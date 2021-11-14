@@ -38,6 +38,8 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
     'sphinx.ext.mathjax',
+    'sphinx.ext.githubpages',
+    'sphinx.ext.viewcode',
     'recommonmark',
 ]
 
@@ -182,7 +184,15 @@ html_show_sourcelink = True
 #html_show_sphinx = True
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
-copyright = u'2021, Phong'
+html_show_copyright = True
+
+html_context = {
+    'display_github': True,
+    'github_user': 'vihophong',
+    'github_repo': 'example-python-with-docs',
+    'github_version': 'master/docs/',
+    'display_github': True,
+               }
 
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the

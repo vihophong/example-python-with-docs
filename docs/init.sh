@@ -7,8 +7,8 @@ if [ "$#" -ne 4 ]; then
     exit 1
 fi
 #echo "eee"
-sed -i "/project = /c\project = u'$1'" conf.py
-sed -i "/copyright = /c\copyright = u'$2'" conf.py
-sed -i "/author = /c\author = u'$3'" conf.py
+sed -i "/project = u/c\project = u'$1'" conf.py
+sed -i "/copyright = u/c\copyright = u'$2'" conf.py
+sed -i "/author = u/c\author = u'$3'" conf.py
 sed -i "/github_doc_root = /c\github_doc_root = '$4'" conf.py
 
